@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-    title: "My Id",
+    title: "My ID",
     description: "A small Web App to generate UUID on the fly.",
 };
 
