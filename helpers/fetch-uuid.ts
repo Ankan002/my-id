@@ -6,9 +6,13 @@ export const fetchUUID = async () => {
         },
     });
 
+    if (!response.ok) {
+        throw new Error("Network Error!!");
+    }
+
     const data = await response.json();
 
-    if(!data.success){
+    if (!data.success) {
         throw new Error(data.error);
     }
 
